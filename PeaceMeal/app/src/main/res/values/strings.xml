@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PeaceMeal</string>
+    <string name="title_activity_selection">SelectionActivity</string>
+</resources>
