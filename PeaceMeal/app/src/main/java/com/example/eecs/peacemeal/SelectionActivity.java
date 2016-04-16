@@ -14,8 +14,7 @@ public class SelectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         final Button completeButton = (Button) findViewById(R.id.completeButton);
         completeButton.setOnClickListener(new View.OnClickListener() {
