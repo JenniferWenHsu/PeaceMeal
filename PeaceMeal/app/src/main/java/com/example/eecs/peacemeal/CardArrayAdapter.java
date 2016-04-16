@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class CardArrayAdapter  extends ArrayAdapter<Card> {
     private List<Card> cardList = new ArrayList<Card>();
 
     static class CardViewHolder {
-        TextView line1;
+        ImageButton imageButton;
         TextView line2;
     }
 
@@ -52,14 +53,14 @@ public class CardArrayAdapter  extends ArrayAdapter<Card> {
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.list_item_card, parent, false);
             viewHolder = new CardViewHolder();
-            viewHolder.line1 = (TextView) row.findViewById(R.id.line1);
+            viewHolder.imageButton = (ImageButton) row.findViewById(R.id.image);
             viewHolder.line2 = (TextView) row.findViewById(R.id.line2);
             row.setTag(viewHolder);
         } else {
             viewHolder = (CardViewHolder)row.getTag();
         }
         Card card = getItem(position);
-        viewHolder.line1.setText(card.getLine1());
+        viewHolder.imageButton.setImageResource(R.drawable.fish);
         viewHolder.line2.setText(card.getLine2());
         return row;
     }

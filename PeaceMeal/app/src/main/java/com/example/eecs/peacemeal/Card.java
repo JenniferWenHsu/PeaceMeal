@@ -4,16 +4,16 @@ package com.example.eecs.peacemeal;
  * Created by Jennifer Hsu on 4/15/16.
  */
 public class Card {
-    private String line1;
+    private int imageId;
     private String line2;
 
-    public Card(String line1, String line2) {
-        this.line1 = line1;
+    public Card(int id, String line2) {
+        this. imageId= id;
         this.line2 = line2;
     }
 
-    public String getLine1() {
-        return line1;
+    public int getImageId() {
+        return imageId;
     }
 
     public String getLine2() {
