@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         final Button googleButton = (Button) findViewById(R.id.googleLogin);
         googleButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 // Perform action on click
             }
         });
