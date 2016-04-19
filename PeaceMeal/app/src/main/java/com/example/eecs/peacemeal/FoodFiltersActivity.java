@@ -1,12 +1,16 @@
 package com.example.eecs.peacemeal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,21 +21,25 @@ public class FoodFiltersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_filters);
+        setContentView(R.layout.grid_view_layout);
 
-        final RadioButton category_meat = (RadioButton) findViewById(R.id.radioButton_meat);
-        final RadioButton category_dairy = (RadioButton) findViewById(R.id.radioButton_dairy);
+        // In your oncreate (or where ever you want to create your gridview)
+        GridView gridview = (GridView) findViewById(R.id.gridview);
+        ButtonAdapter btn_adapter = new ButtonAdapter(this);
+        gridview.setAdapter(btn_adapter);
 
-        HashMap<String, String> map = new HashMap<RadioButton, List<Button> >();
+        final Button completeButton = (Button) findViewById(R.id.button_complete);
 
-        Button food_buttons[] = new Button[5];
-        LinearLayout layout = (LinearLayout) findViewById(R.id.newlayout);
-        for(int index = 0; index < 5; index++){
-            food_buttons[index] = new Button(this);
-            food_buttons[index].setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1f));
-            food_buttons[index].setText("Button # " + index);//null ptr exception error
-            layout.addView(food_buttons[index]);
-        }
+        completeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Perform action on click
+                sendMessage(v);
+            }
+        });
     }
 
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, DishFeedActivity.class);
+        startActivity(intent);
+    }
 }
