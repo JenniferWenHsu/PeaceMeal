@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -13,7 +14,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 public class DishFeedActivity extends Activity {
-    private static final String TAG = "CardListActivity";
+    private static final String TAG = "PeaceMeal";
     private CardArrayAdapter cardArrayAdapter;
     private ListView listView;
     /**
@@ -24,6 +25,8 @@ public class DishFeedActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Log.d(TAG, "DishFeedActivity onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
         listView = (ListView) findViewById(R.id.card_listView);

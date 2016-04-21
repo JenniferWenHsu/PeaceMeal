@@ -61,6 +61,7 @@ public class PhoneToWatchService extends Service {
         Bundle extras = intent.getExtras();
         //  final String catName = extras.getString("CAT_NAME");
         if (extras != null) {
+            Log.d(TAG, "in PhoneToWatchService onStartCommand");
             final String dish = extras.getString("DISH");
 
             // Send the message with the cat name
@@ -71,6 +72,7 @@ public class PhoneToWatchService extends Service {
                     mApiClient.connect();
                     //now that you're connected, send a massage with the cat name
                     //sendMessage("/" + catName, catName);
+                    Log.d(TAG, "PhoneTo Watch Service sending message");
                     sendMessage("/Dish", dish);
                 }
             }).start();

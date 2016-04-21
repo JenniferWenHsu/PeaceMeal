@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 public class WatchListenerService extends WearableListenerService {
 
     //   WearableListenerServices don't need an iBinder or an onStartCommand: they just need an onMessageReceieved.
-    private String TAG = "Represent!";
+    private String TAG = "PeaceMeal";
     private static final String DISH_PATH = "/Dish";
 
     @Override
