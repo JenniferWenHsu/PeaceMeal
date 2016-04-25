@@ -10,15 +10,25 @@
     tools:context="com.example.eecs.peacemeal.MainActivity"
     android:background="@drawable/background">
 
+
+    <ImageView
+        android:src="@drawable/facebookicon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/facebookLogin"
+        android:layout_alignStart="@+id/appDescrition" />
+
+
     <Button
         android:textColor="#ffffff"
         android:background="#2F80ED"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:text="Log In with Facebook"
         android:id="@+id/facebookLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView" />
 
     <TextView
         android:textSize="35dp"
@@ -42,10 +52,5 @@
         android:layout_below="@+id/appName"
         android:layout_alignStart="@+id/appName" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_alignBottom="@+id/facebookLogin"
-        android:layout_alignStart="@+id/appDescrition" />
+
 </RelativeLayout>
