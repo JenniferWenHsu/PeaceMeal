@@ -7,8 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ListView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SelectionActivity extends AppCompatActivity {
 
@@ -25,6 +29,9 @@ public class SelectionActivity extends AppCompatActivity {
                 sendMessage(v);
             }
         });
+
+        //This is for storing which items have been selected or not
+        Map<String, String> map = new HashMap<String, String>();
 
         /**
          * This is hackathon style. Time constraint results in nonDRY code
@@ -44,6 +51,9 @@ public class SelectionActivity extends AppCompatActivity {
         for ( int i=0; i< adapter.getCount(); i++ ) {
             listview.setItemChecked(i, true);
         }
+
+        //update map hash-map
+
         final Button unselectMeatButton = (Button) findViewById(R.id.meatUnselectAll);
         unselectMeatButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -60,7 +60,7 @@ public class CardArrayAdapter  extends ArrayAdapter<Card> {
             viewHolder = (CardViewHolder)row.getTag();
         }
         Card card = getItem(position);
-        viewHolder.imageButton.setImageResource(R.drawable.fish);
+        viewHolder.imageButton.setImageResource(card.getImageId());
         viewHolder.line2.setText(card.getLine2());
         return row;
     }
