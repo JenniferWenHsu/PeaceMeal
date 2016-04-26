@@ -18,7 +18,8 @@
         <activity android:name=".DishFeedActivity" />
         <activity android:name=".SelectionActivity" />
         <activity android:name=".FoodFiltersActivity" />
-        <activity android:name=".ButtonAdapter"></activity>
+        <activity android:name=".ButtonAdapter" />
+        <activity android:name=".DishViewActivity"></activity>
     </application>
 
 </manifest>
