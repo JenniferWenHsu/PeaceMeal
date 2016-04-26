@@ -26,6 +26,10 @@ public class SelectionActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * This is hackathon style. Time constraint results in nonDRY code
+         */
+        //Meat List View
         ListView listview = (ListView)findViewById(R.id.listView);
         //string array
         String[] foody = {"fish", "beef", "chicken"};
@@ -44,23 +48,23 @@ public class SelectionActivity extends AppCompatActivity {
         unselectMeatButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 ListView listview = (ListView)findViewById(R.id.listView);
-                String[] foody = {"fish", "beef", "chicken"};
+                String[] meat = {"fish", "beef", "chicken"};
                 int count = 0;
-                for(int i = 0; i<foody.length;i++) {
+                for(int i = 0; i<meat.length;i++) {
                     if(listview.isItemChecked(i)) {
                         count++;
                     }
                 }
                 //if all are selected
-                if(count == foody.length){
-                    for(int i=0;i<foody.length;i++) {
+                if(count == meat.length){
+                    for(int i=0;i<meat.length;i++) {
                         listview.setItemChecked(i, false);
                     }
                     unselectMeatButton.setText("Select All Meat");
                 }
                 //if none are selected
                 else{
-                    for(int i=0;i<foody.length;i++) {
+                    for(int i=0;i<meat.length;i++) {
                         listview.setItemChecked(i, true);
                     }
                     unselectMeatButton.setText("Unselect All Meat");
@@ -69,6 +73,49 @@ public class SelectionActivity extends AppCompatActivity {
             }
         });
 
+        //Diary List View
+        ListView listview2 = (ListView)findViewById(R.id.listView2);
+        //string array
+        String[] diary = {"milk", "egg"};
+        // set adapter for listview
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.list_item, diary);
+        listview2.setAdapter(adapter2);
+        listview2.setItemsCanFocus(false);
+        // we want multiple clicks
+        listview2.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+
+        //select all items first
+        for ( int i=0; i< adapter2.getCount(); i++ ) {
+            listview2.setItemChecked(i, true);
+        }
+        final Button unselectDiaryButton = (Button) findViewById(R.id.diaryUnselectAll);
+        unselectDiaryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                ListView listview2 = (ListView)findViewById(R.id.listView2);
+                String[] diary = {"milk", "egg"};
+                int count = 0;
+                for(int i = 0; i<diary.length;i++) {
+                    if(listview2.isItemChecked(i)) {
+                        count++;
+                    }
+                }
+                //if all are selected
+                if(count == diary.length){
+                    for(int i=0;i<diary.length;i++) {
+                        listview2.setItemChecked(i, false);
+                    }
+                    unselectDiaryButton.setText("Select All Diary");
+                }
+                //if none are selected
+                else{
+                    for(int i=0;i<diary.length;i++) {
+                        listview2.setItemChecked(i, true);
+                    }
+                    unselectDiaryButton.setText("Unselect All Diary");
+                }
+
+            }
+        });
         //create the imageButton and it changes picture onClick, store information in the filter array
     }
 
