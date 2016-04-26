@@ -21,17 +21,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button googleButton = (Button) findViewById(R.id.googleLogin);
-        googleButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                // Perform action on click
-            }
-        });
 
     }
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, FoodFiltersActivity.class);
+        Intent intent = new Intent(this, SelectionActivity.class);
         startActivity(intent);
     }
 

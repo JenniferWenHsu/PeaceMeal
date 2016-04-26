@@ -7,23 +7,55 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.eecs.peacemeal.SelectionActivity">
+    tools:context="com.example.eecs.peacemeal.SelectionActivity"
+    android:background="#163763">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Complete"
         android:id="@+id/completeButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="#3F69DC"
+        android:textColor="#F2F2F2"
+        android:layout_alignParentStart="true" />
 
     <ImageView
-        android:src="@drawable/fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fishButton"
-        android:layout_alignParentTop="true"
+        android:id="@+id/no" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/meatText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Meat"
+        android:id="@+id/meatText"
+        android:layout_below="@+id/no"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp" />
+        android:textColor="#ffffff"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unselect All Meat"
+        android:id="@+id/meatUnselectAll"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/meatText"
+        android:background="@android:color/transparent"/>
+
+
 </RelativeLayout>

@@ -57,11 +57,7 @@ public class ButtonAdapter extends BaseAdapter {
         else {
             btn = (Button) convertView;
         }
-        //btn.setText(filenames[position]);
-        // filenames is an array of strings
-        btn.setTextColor(Color.WHITE);
-        btn.setBackgroundResource(R.drawable.fish);
-        btn.setId(position);
+
 
         // Set the onclicklistener so that pressing the button fires an event
         // We will need to implement this onclicklistner.
