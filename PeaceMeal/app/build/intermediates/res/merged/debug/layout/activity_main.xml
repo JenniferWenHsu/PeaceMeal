@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eecs.peacemeal.MainActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:src="@drawable/facebookicon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/facebookLogin"
+        android:layout_alignStart="@+id/appDescrition" />
+
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="#2F80ED"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="Log In with Facebook"
+        android:id="@+id/facebookLogin"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:textSize="35dp"
+        android:textColor="#163763"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PeaceMeal"
+        android:id="@+id/appName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Safely choose your next meal "
+        android:id="@+id/appDescrition"
+        android:layout_below="@+id/appName"
+        android:layout_alignStart="@+id/appName" />
+
+
+</RelativeLayout>

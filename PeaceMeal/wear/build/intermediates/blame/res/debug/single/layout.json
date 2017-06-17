@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\rect_activity_main2.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\rect_activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\rect_activity_main2.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\rect_activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\round_activity_main2.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\round_activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\my_custom_card.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\my_custom_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\error_layout.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\layout\\error_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog_wearable.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\layout\\alert_dialog_wearable.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\error_layout.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\layout\\error_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\round_activity_main.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\round_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\my_custom_card.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\my_custom_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\rect_activity_main.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\rect_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\round_activity_main2.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\round_activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog_wearable.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.3.0\\res\\layout\\alert_dialog_wearable.xml"
+    },
+    {
+        "merged": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\round_activity_main.xml",
+        "source": "C:\\Users\\jenni\\Project\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\round_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\rect_activity_main.xml",
+        "source": "C:\\Users\\apple\\Projects\\CS160\\Group-29-Project\\PeaceMeal\\wear\\src\\main\\res\\layout\\rect_activity_main.xml"
+    }
+]
